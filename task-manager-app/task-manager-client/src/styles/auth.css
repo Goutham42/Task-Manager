@@ -1,33 +1,96 @@
-.auth-container {
-  max-width: 360px;
-  margin: 120px auto;
-  padding: 32px;
-  background: var(--card);
-  border-radius: var(--radius);
-  text-align: center;
+/* ---------- Wrapper ---------- */
+.auth-wrapper {
+  min-height: calc(100vh - env(safe-area-inset-bottom));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
 }
 
-.login-btn {
-  margin-top: 16px;
+/* ---------- Card ---------- */
+.auth-card {
   width: 100%;
-  padding: 10px;
-  background: var(--primary);
-  color: black;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+  max-width: 380px;
+  padding: 36px 32px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(16px);
+
+  box-shadow:
+    0 20px 40px rgba(15, 23, 42, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+
+  text-align: center;
+  animation: fadeUp 0.6s ease;
 }
 
-.task-form button {
-  background: var(--primary);
+body.dark .auth-card {
+  background: rgba(2, 6, 23, 0.9);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- Logo ---------- */
+.auth-logo {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+/* ---------- Text ---------- */
+.auth-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.auth-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 28px;
+}
+
+body.dark .auth-subtitle {
+  color: #9ca3af;
+}
+
+/* ---------- Button ---------- */
+.login-btn {
+  width: 100%;
+  padding: 14px 16px;
+
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
   color: white;
+
   border: none;
-  padding: 10px 16px;
-  border-radius: 6px;
-  font-weight: 500;
-  min-width: 72px;
+  border-radius: 14px;
+
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.task-form button:hover {
-  opacity: 0.9;
+.login-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(99, 102, 241, 0.4);
+}
+
+/* ---------- Footer ---------- */
+.auth-footer {
+  margin-top: 18px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* ---------- Animation ---------- */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
