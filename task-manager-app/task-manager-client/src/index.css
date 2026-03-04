@@ -1,0 +1,46 @@
+/* ---------- Base ---------- */
+body {
+  margin: 0;
+  font-family: "Inter", "Manrope", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #f8fafc, #eef2f7);
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.dark {
+  background: radial-gradient(circle at top, #020617, #000);
+  color: #e5e7eb;
+}
+
+/* =========================
+   🍎 iOS Safe Area Support
+   ========================= */
+
+/* Prevent content from hiding behind notch / home bar */
+body {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+/* Header respects notch */
+.app-header {
+  padding-left: calc(16px + env(safe-area-inset-left));
+  padding-right: calc(16px + env(safe-area-inset-right));
+  padding-top: env(safe-area-inset-top);
+}
+
+/* Dashboard card spacing */
+.dashboard {
+  margin-bottom: calc(24px + env(safe-area-inset-bottom));
+}
+
+/* Forms & lists stay tappable above home bar */
+.task-form,
+.task-list {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Login / Auth screen */
+.auth-container {
+  margin-bottom: calc(32px + env(safe-area-inset-bottom));
+}

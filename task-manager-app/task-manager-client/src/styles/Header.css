@@ -1,0 +1,45 @@
+.app-header {
+  height: 64px;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  font-family: "Manrope", "Inter", sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* 🌗 Theme toggle */
+.theme-btn {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.theme-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* 🚪 Logout */
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  opacity: 0.9;
+}

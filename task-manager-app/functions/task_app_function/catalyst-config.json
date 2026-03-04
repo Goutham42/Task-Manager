@@ -1,0 +1,10 @@
+{
+  "deployment": {
+    "name": "task_app_function",
+    "type": "advancedio",
+    "stack": "node18"
+  },
+  "execution": {
+    "main": "index.js"
+  }
+}

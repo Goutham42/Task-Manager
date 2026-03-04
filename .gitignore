@@ -1,0 +1,19 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Builds
+build/
+dist/
+
+# Env files
+.env
+.env.local
+
+# Zoho Catalyst
+.catalyst/
+.catalystignore
+
+# OS
+.DS_Store
+Thumbs.db

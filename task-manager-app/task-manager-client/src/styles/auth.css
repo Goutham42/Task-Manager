@@ -1,0 +1,33 @@
+.auth-container {
+  max-width: 360px;
+  margin: 120px auto;
+  padding: 32px;
+  background: var(--card);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.login-btn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  background: var(--primary);
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.task-form button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  min-width: 72px;
+}
+
+.task-form button:hover {
+  opacity: 0.9;
+}
